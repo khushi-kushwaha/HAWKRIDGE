@@ -1,0 +1,829 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:Poppins, sans-serif;
+}
+html body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#home{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#blackdiv{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    animation: swipeUp 1s forwards 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes swipeUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+}
+
+#first{
+    height: 115%;
+    width: 100%;
+    background-image: url(https://hawkridgeaustin.com/wp-content/themes/hawkridge/static/img/hero-image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0px 50px;
+    position: relative;
+}
+
+#innerfirst{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #C0A46F;
+}
+
+#nav{
+    padding-top: 2px;
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid #C0A46F;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navleft{
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid #C0A46F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navleft img{
+    width: 65%;
+}
+
+#navright{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#navright a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#navright a:hover{
+    color:#4B493E;
+}
+
+#navright button{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-right: 20px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#navright button:hover{
+    color: #837F75;
+    background-color: #F3EAE1;
+}
+
+#innerfirst p{
+    font-weight: 200;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    animation: fadeIn 1s 1s forwards;
+    opacity: 0;
+}
+
+#innerfirst #tour{
+    background-color: #F3EAE1;
+    border: 1px solid #F3EAE1;
+    padding: 15px;
+    color: #1F3930;
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 1s 1s forwards;
+    opacity: 0;
+}
+
+#first #tour i{
+    font-size: 18px;
+}
+
+#first #tour:hover{
+    background-color: transparent;
+    color:#F3EAE1;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+#second{
+    height: 260%;
+    width: 100%;
+    padding: 0px 50px;
+    background-color: #F3EAE1;
+}
+
+#innersecond{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #C0A46F;
+    color: black;
+    padding: 100px 0px;
+    position: relative;
+    border-bottom: none;
+}
+
+#innersecond h5{
+   position:absolute;
+   font-weight: 500;
+   font-size: 18px;
+   color: #C6AC7B;
+   margin-left: 3%;
+   top: 7%;
+}
+
+#center{
+    margin-left: 25%;
+    font-size: 42px;
+    font-weight: 100;
+    opacity: .9;
+}
+
+#left{
+    margin-left: 18%;
+    font-size: 42px;
+    font-weight: 100;
+    opacity: .9;
+}
+
+#secondpic{
+   height: 33%;
+   width: 100%;
+   border-top: 1px solid #C0A46F;
+   border-bottom: 1px solid #C0A46F;
+   margin-top: 15px;
+   display: flex;
+}
+
+#secondpicleft{
+    padding: 20px;
+    width: 76%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+#pic1{
+  width: 75%;
+}
+
+#pic2{
+    height: 75%;
+    margin-top:11.6%;
+}
+
+#secondtext{
+    padding: 20px;
+    width: 24%;
+    height: 100%;
+    border-left:1px solid #C0A46F; 
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#secondtextup h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: .8;
+    font-weight: 600;
+}
+
+#secondtextup P{
+    font-size: 15px;
+    color: #8E8983;
+}
+
+#secondtextdown button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 100;
+    background-color: #1F3930;
+    border: none;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+#secondtextdown button i{
+    font-size: 20px;
+}
+
+#secondtextdown button:hover{
+    background-color: transparent;
+    border:1px solid black; 
+    color:black;
+}
+
+#black{
+    height: 12%;
+    width: 100%;
+    border-bottom: 1px solid #C0A46F;
+}
+
+#innersecond h4{
+    position:absolute;
+    font-weight: 500;
+    font-size: 18px;
+    color: #C6AC7B;
+    margin-left: 3%;
+    top: 56%;
+ }
+ 
+ #center2{
+    margin-left: 28%;
+    font-size: 45px;
+    font-weight: 100;
+    opacity: .9;
+    margin-top: 4%;
+    letter-spacing: 5px;
+ }
+ 
+ #left2{
+    margin-left: 38%;
+    font-size: 45px;
+    font-weight: 100;
+    opacity: .9;
+    letter-spacing:5px;
+ }
+
+#secondmap{
+    height: 42%;
+    width: 100%;
+    background-image: url(https://hawkridgeaustin.com/wp-content/themes/hawkridge/static/img/lots-sold.svg);
+    background-position: center;
+    background-size: 95%;
+    background-repeat: no-repeat;
+}
+
+#third{
+    height: 120%;
+    width: 100%;
+    background-image: url(https://hawkridgeaustin.com/wp-content/themes/hawkridge/static/img/hills.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+
+#semithird{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(to top, transparent 40%, #F3EAE1 100%);
+    padding: 0px 50px;
+    
+}
+
+#innerthird{
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid #C0A46F;
+    border-right: 1px solid #C0A46F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#innerthird h1{
+    font-size: 85px;
+    color:#c0bfbe;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+#partthird{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#ptthird{
+    height: 60%;
+    width: 30%;
+    border-left: 1px solid #C0A46F;
+    color: WHITE;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+#ptthird p{
+    font-weight: 100;
+    font-size: 15px;
+    opacity: .8;
+}
+
+
+#ptthird2{
+    padding: 15px;
+    height: 60%;
+    width: 30%;
+    border-left: 1px solid #C0A46F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ptthird2 p{
+    font-weight: 100;
+    font-size: 15px;
+    opacity: .8;
+}
+
+#ptthird2 button{
+    padding: 15px;
+    width: 70%;
+    background-color: #F3EAE1;
+    border: 1px solid #F3EAE1;
+}
+
+#ptthird2 button:hover{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+#forth{
+    height: 200%;
+    width: 100%;
+    padding :0px 50px;
+    background-color: #0E0E0D;
+}
+
+#innerforth{
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid #C0A46F;
+    border-right: 1px solid #C0A46F; 
+    color: #F3EAE1;
+    padding-top:100PX;
+    position: relative;
+}
+
+#innerforth h5{
+   position: absolute;
+   left: 5%;
+   top: 8%;
+   font-weight: 100;
+   font-size: 14px;
+   color:#C0A46F ;
+}
+
+#innerforth h1{
+    font-weight: 200;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+#innerforth #album{
+    height: 18%;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    border-top: 1px solid #C0A46F;
+    border-bottom: 1px solid #C0A46F; 
+}
+
+#boxes{
+    height: 100%;
+    width: calc(100%/4);
+    border-left: 1px solid #C0A46F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+}
+
+#boxes p{
+   font-size: 15px;
+   font-weight: 100;
+   opacity: .9;
+   color: #F3EAE1;
+}
+
+#boxes h2{
+    color: #C0A46F;
+    font-weight: 100;
+    font-size: 100px;
+}
+
+#boxes h6{
+    color:#C0A46F;
+    margin-top: 48px;
+    margin-left: 8px;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+#gallery{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #C0A46F;
+
+}
+
+#pictures1{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+#pictures1 img{
+        width: 100%;
+        height: 100%;
+}
+
+#pictures2{
+    width: 50%;
+    height: 100%;  
+    background-image: url(https://hawkridgeaustin.com/wp-content/uploads/2023/08/story-2-min.png);
+    background-position: center;
+    background-size: cover;
+    border-left: 1px solid #C0A46F;
+
+}
+
+#fifth{
+   height: 200%;
+   width: 100%;
+   background-image: linear-gradient(rgba(243, 234, 225, .2), rgba(243, 234, 225, .2)), url(https://hawkridgeaustin.com/wp-content/themes/hawkridge/static/img/location-map.svg);
+   background-position: right;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-color: #F3EAE1;
+   padding: 0px 50px;
+}
+
+#innerfifth{
+   height: 100%;
+   width: 100%;
+   border-left: 1px solid #C0A46F;
+   border-right: 1px solid #C0A46F; 
+   position: relative;
+   padding: 100px 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+
+}
+
+#boxpic1{
+    position: absolute;
+    top: 7%;
+    left: 18%;
+    height:20%;
+    width: 32%;
+    background-image: url(https://hawkridgeaustin.com/wp-content/uploads/2023/08/location-02-min.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#boxpic2{
+    top: 25%;
+    left: 2%;
+    height:27%;
+    width: 22%;
+    position: absolute;
+    background-image: url(https://hawkridgeaustin.com/wp-content/uploads/2023/08/location-01-min.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#boxpic3{
+    position: absolute;
+    top: 27%;
+    left: 37%;
+    height:20%;
+    width: 30%;
+    background-image: url(https://hawkridgeaustin.com/wp-content/uploads/2023/08/location-03-min.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#box4{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    top: 69.8%;
+    left: 50%;
+}
+
+#box4 img{
+    width: 48%;
+}
+
+#box4 h2{
+    font-weight: 500;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#innerfifth h4{
+    color: #C0A46F;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#innerfifth h1{
+    font-weight: 100;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#innerfifth p{
+    font-weight: 100;
+    font-size: 15px;
+    margin-bottom: 10px;
+    opacity: .8;
+}
+
+#innerfifth button{
+    width: 20%;
+    padding: 15px 20px;
+    margin-top: 15px;
+    background-color: #1F3930;
+    border: 1px solid #1F3930;
+    color: white;
+    font-weight: 200;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer{
+    height: 175%;
+    width: 100%;
+    background-color: #0E0E0D;
+    padding: 0px 50px ;
+}
+
+#semifooter{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #C0A46F;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+#footer1{
+    height: 65%;
+    width: 100%;
+    border-bottom: 1px solid #C0A46F;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer1pic{
+    height: 85%;
+    width: 40%;
+    background-image: url(https://hawkridgeaustin.com/wp-content/uploads/2023/08/footer-form-image-min.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#footer1form{
+    height: 85%;
+    width: 50%;
+    padding: 20PX;
+}
+
+#footer1form h4{
+    color: #A58E60;
+    font-weight: 200;
+
+}
+
+#footer1form h1{
+    color: white;
+    font-weight: 100;
+    font-size: 53px;
+    text-align: end;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#footer1form input{
+    width: 100%;
+    border: 1px solid #A58E60;
+    background-color: transparent;
+    padding: 15px 10px;
+    margin: 5px 0px;
+    color: #817C77;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+#footer1form #half{
+    width: 49%;
+} 
+
+#MESSAGE{
+    height: 32%;
+}
+
+#footer1form button{
+    padding: 18px 32px;
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 15px;
+    background-color: #F3EAE1;
+    border: 1px solid #F3EAE1;
+    display: flex;
+    gap: 10px;
+    color:#817C77 ;
+}
+
+#footer1form button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+#footer2{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    gap: 15%;
+    align-items: center;
+}
+
+#footer2 h2{
+ color: #C0A46F;
+ font-weight: 100;
+ font-size: 18px;
+}
+
+#footer2 h2 button{
+    padding: 12px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    opacity: .9;
+    font-size: 12px;
+}
+
+#footer2 h2 button:hover{
+    background-color: #F3EAE1;
+    color: #0E0E0D;
+}
+
+#footer2 h2 #yellow{
+    background-color: #C0A46F;
+    color: black;
+    border: none;
+    border: 1px solid #C0A46F;
+
+}
+
+#footer2 h2 #yellow:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+#circle{
+    font-weight: 200;
+    font-size: 15px;
+}
+
+#footer3{
+    height: 20%;
+    width: 100%;
+    border-bottom: 1px solid #C0A46F;
+    border-top: 1px solid #C0A46F;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding: 0px 20px;
+}
+
+#footer3 h1{
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #EEE5DC;
+}
+
+#footer3 h5{
+    color: #C0A46F;
+    margin-bottom: 12px;
+}
+
+#footer3 h4{
+    font-weight: 400;
+    font-size: 13px;
+    margin-right: 20px;
+    color: #EEE5DC;
+}
+
+#footer3left a{
+    text-decoration: none;
+    color: #EEE5DC;
+    font-weight: 400;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+#righttt{
+    display:flex;
+    gap:20px;
+}
+
+#footer4{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    gap: 30%;
+    align-items: center;
+}
+
+#footer4 h5{
+    color: #726E69;
+}
+
+#footer4 h4{
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    opacity: .9;
+}
+
+
+
